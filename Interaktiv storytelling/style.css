@@ -1,0 +1,244 @@
+body {
+    background-color: #9DAF93;
+    padding: 1rem 18rem;
+}
+
+.lottie-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+lottie-player {
+  width: 85px;
+  height: 75px;
+  filter: brightness(0);
+}
+
+/*Overskrift*/
+.overskrift {
+    text-align: center;
+    font-size: 14px;
+}
+
+/*Logo*/
+.steno-logo img {
+    margin: 0 auto;
+    display: block;
+    max-width: 8rem;
+}
+
+/* Velkomst ord */
+.forord {
+    text-align: center;
+    font-size: 15px;
+}
+
+/*Tidslinje Start*/
+.timeline {
+  width:60%;
+  height: 2px; /* Tykkelsen af tidslinjen */
+  background-color: black; /* Farven på tidslinjen */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5rem auto; /* Centrerer tidslinjen vandret */
+  position: relative; /* Til placering af punkter */
+}
+
+.line {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.point {
+  width: 15px; /* Diameteren på punkterne */
+  height: 15px;
+  background-color: white;
+  border-radius: 100%; /* Gør punkterne runde */
+  position: absolute;
+  top: -1;
+}
+
+.point:nth-child(odd)::after {
+  content: attr(data-year);
+  font-size: 20px;
+  position: absolute;
+  top: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: black; /* Ændrer farven på årstallet */
+}
+
+.point:nth-child(even)::after {
+  content: attr(data-year);
+  font-size: 20px;
+  position: absolute;
+  top: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: black; /* Ændrer farven på årstallet */
+}
+
+.point:nth-child(7) { left: 0%; }
+.point:nth-child(2) { left: 7.6%; }
+.point:nth-child(3) { left: 16%; }
+.point:nth-child(4) { left: 24%; }
+.point:nth-child(5) { left: 33%; }
+.point:nth-child(6) { left: 42%; }
+.point:nth-child(8) { left: 61%; }
+.point:nth-child(9) { left: 72%; }
+.point:nth-child(10) { left: 82%; }
+.point:nth-child(11) { left: 92%; }
+.point:nth-child(12) { left: 100%; }
+.point:nth-child(13) { left: 52%; }
+
+/*Tidslinje Slut*/
+
+/*Animeret silloutte*/
+.kvinde img {
+    display: block;
+    margin: -3rem auto;
+    max-width: 30rem;
+}
+
+/* Udforsk tidslinje knap*/
+.udforsk-tidslinje {
+    text-align: center;
+    border: .5px solid black;
+    border-radius: 10px;
+    margin: 3rem auto;
+    display: block;
+    color: black;
+    background-color: white;
+    padding: 7px;
+    width: 10rem;
+    font-weight: bold;
+}
+
+/*Udforsk tidslinje knap hover effekt*/
+.udforsk-tidslinje:hover {
+    color: black;
+    background-color: rgb(232, 229, 229);
+    cursor: pointer;
+}
+
+/* 1900 - Start */
+
+.sf-knap {
+display: flex;
+justify-content: flex-end;
+z-index: -1000;
+margin-top: -5rem;
+}
+
+.sf-knap button {
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.sf-popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+#sf-trueBtn, #sf-falseBtn {
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 1rem;
+  background-color: white;
+  color: black;
+  padding: .5rem;
+  cursor: pointer;
+}
+
+#sf-trueBtn:hover, #sf-falseBtn:hover {
+  background-color: rgb(232, 229, 229);
+  color: black;
+}
+
+#sf-popup.green {
+  background-color: green; /* Stil for grøn baggrundsfarve */
+}
+
+#sf-popup.red {
+  background-color: red; /* Stil for rød baggrundsfarve */
+}
+
+.sf-popup-content {
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  max-width: 40rem;
+  display: block;
+  margin: 10rem auto 0 auto;
+  background-color: #9DAF93;
+}
+
+.sf-close {
+  position: fixed;
+  top: 11rem;
+  right: 28rem;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+
+.container-1900 {
+    display: flex;
+    margin-top: 8rem;
+  }
+  
+  .img-1900 {
+    max-width: 30%;
+  }
+  
+  .tekst-1900 {
+    flex: 1;
+    margin-left: 20px; /* Afstand mellem billede og tekst */
+  }
+
+  .tekst-1900 h2 {
+    text-align: center;
+  }
+  
+  /* Justering af billedets størrelse */
+  .img-1900 img {
+    max-width: 100%;
+    height: auto;
+  }
+
+/*1900 - Slut */
+
+/*1910 - Start*/
+
+.tekst-1910 h2 {
+text-align: center;
+}
+
+
+.container-1910 {
+  display: flex;
+  margin-top: 10rem;
+}
+
+.img-1910 img {
+  max-width: 100%;
+}
+
+/*1910 - Slut*/
