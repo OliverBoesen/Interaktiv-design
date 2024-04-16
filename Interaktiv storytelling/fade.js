@@ -8,7 +8,10 @@ document.addEventListener("DOMContentLoaded", function() {
     function handleFade() {
       const sectionTop = section1900.getBoundingClientRect().top;
       const windowHeight = window.innerHeight;
-  
+// Hvis baggrundsfarve også skal skiftes.
+        tag det nedeunder.
+
+        
       // Hvis sektionen er inden for synsfeltet
       if (sectionTop < windowHeight / 2 && sectionTop > -windowHeight / 2) {
         container1900.classList.add("fade-in");
@@ -28,20 +31,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-  window.addEventListener('scroll', function() {
-    var element = document.getElementById('.img-1900');
-    var elementPosition = element.getBoundingClientRect().top;
-    var screenPosition = window.innerHeight;
 
-    if (elementPosition < screenPosition) {
-        fadeIn(element);
-    }
-});
-
-function fadeIn(element) {
-    element.style.opacity = 1; // Sæt gennemsigtigheden til 1 for at fade ind
-    element.style.clipPath = "inset(0 0 10% 0)"; // Beskær billedet for at vise en del af den nederste halvdel
-}
-  
 
 
