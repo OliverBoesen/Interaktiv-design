@@ -63,3 +63,45 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
+// Tidslinje Scroll knap - Ruller ned til 1920
+document.addEventListener("DOMContentLoaded", function() {
+  const scrollLinks = document.querySelectorAll("#scroll-1920");
+
+  scrollLinks.forEach(link => {
+    link.addEventListener("click", function(e) {
+      e.preventDefault();
+
+      const targetId = this.getAttribute("href").substring(1);
+      const targetSection = document.getElementById(1920);
+
+      if (targetSection) {
+        targetSection.scrollIntoView({
+          behavior: "smooth",
+          block: "start"
+        });
+      }
+    });
+  });
+});
+
+// Tidslinje Scroll knap - Ruller ned til 1930
+document.addEventListener("DOMContentLoaded", function() {
+  const scrollLinks = document.querySelectorAll("#scroll-1930");
+
+  scrollLinks.forEach(link => {
+    link.addEventListener("click", function(e) {
+      e.preventDefault();
+
+      const targetId = this.getAttribute("href").substring(1);
+      const targetSection = document.getElementById(1930);
+
+      if (targetSection) {
+        targetSection.scrollIntoView({
+          behavior: "smooth",
+          block: "start"
+        });
+      }
+    });
+  });
+});
+

@@ -58,3 +58,4 @@ document.addEventListener('click', (e) => {
 
 // Nulstil popup'en ved indlæsning
 window.onload = resetPopup;
+

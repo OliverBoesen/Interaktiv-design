@@ -3,11 +3,27 @@ body {
     padding: 1rem 18rem;
 }
 
-.lottie-container {
+/* Scroll ned animation */
+/*Der er lavet 12 af dem så JavaScript kan gå ned og tage fat i den rigtige div, til at scrool ned */
+.lottie-container, 
+.lottie-container-2,
+.lottie-container-3, 
+.lottie-container-4, 
+.lottie-container-5,
+.lottie-container-6,
+.lottie-container-7,
+.lottie-container-8,
+.lottie-container-9,
+.lottie-container-10,
+.lottie-container-11,
+.lottie-container-12,
+.lottie-container-13 {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 5rem;
+  margin: 10rem auto 0;
+  cursor: pointer;
+  width: 10%;
 }
 
 lottie-player {
@@ -106,7 +122,7 @@ lottie-player {
 .kvinde img {
     display: block;
     margin: -3rem auto;
-    max-width: 30rem;
+    max-width: 40rem;
 }
 
 /* Udforsk tidslinje knap*/
@@ -132,6 +148,9 @@ lottie-player {
 
 /* 1900 - Start */
 
+/*Sandt eller falsk knap*/
+
+/* Knap i højre side*/
 .sf-knap {
 display: flex;
 justify-content: flex-end;
@@ -198,47 +217,137 @@ margin-top: -5rem;
   cursor: pointer;
 }
 
+/* Knap i venstre side */
 
-.container-1900 {
+.sf-knap-left {
+  display: flex;
+  justify-content: flex-start;
+  z-index: -1000;
+  margin-top: -5rem;
+  }
+  
+  .sf-knap-left button {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+/*Styling til når silluette er til venstre*/
+
+.container-1900, 
+.container-1920, 
+.container-1940, 
+.container-1960, 
+.container-1980, 
+.container-2000, 
+.container-nu {
     display: flex;
     margin-top: 8rem;
   }
   
-  .img-1900 {
+  .img-1900, 
+  .img-1920,
+  .img-1940,
+  .img-1960,
+  .img-1980,
+  .img-2000,
+  .img-nu {
     max-width: 30%;
   }
   
-  .tekst-1900 {
-    flex: 1;
-    margin-left: 20px; /* Afstand mellem billede og tekst */
+  .tekst-1900,
+  .tekst-1920,
+  .tekst-1940,
+  .tekst-1960,
+  .tekst-1980,
+  .tekst-2000,
+  .tekst-nu {
+    margin-left: 20px;
+    width: 200rem;
   }
 
-  .tekst-1900 h2 {
+  .tekst-1900 h2, 
+  .tekst-1920 h2,
+  .tekst-1940 h2,
+  .tekst-1960 h2,
+  .tekst-1980 h2,
+  .tekst-2000 h2,
+  .tekst-nu h2 {
     text-align: center;
   }
   
-  /* Justering af billedets størrelse */
-  .img-1900 img {
+
+  .img-1900 img,
+  .img-1920 img,
+  .img-1940 img,
+  .img-1960 img,
+  .img-1980 img,
+  .img-2000 img,
+  .img-nu img {
     max-width: 100%;
     height: auto;
   }
 
-/*1900 - Slut */
 
-/*1910 - Start*/
 
-.tekst-1910 h2 {
+/*Styling til når silluette er til højre*/
+
+.tekst-1910 h2, 
+.tekst-1930 h2,
+.tekst-1950 h2,
+.tekst-1970 h2,
+.tekst-1990 h2,
+.tekst-2010 h2 {
 text-align: center;
 }
 
+.tekst-1910, 
+.tekst-1930,
+.tekst-1950,
+.tekst-1970,
+.tekst-1990,
+.tekst-2010 {
+  margin-right: 20px;
+  width: 200rem;
+}
 
-.container-1910 {
+.container-1910, 
+.container-1930,
+.container-1950,
+.container-1970,
+.container-1990,
+.container-2010 {
   display: flex;
-  margin-top: 10rem;
+  margin-top: 7rem;
 }
 
-.img-1910 img {
-  max-width: 100%;
+.img-1910 img, 
+.img-1930 img,
+.img-1950 img,
+.img-1970 img,
+.img-1990 img,
+.img-2010 img {
+  max-width: 80%;
+  height: auto;
 }
 
-/*1910 - Slut*/
+
+
+/*fade in*/
+
+.container-1910, .img-1910, .tekst-1910 {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out; /* Tilføj en overgangseffekt */
+}
+.container-1910.fade-in, .img-1910.fade-in, .tekst-1910.fade-in {
+  opacity: 1;
+}
+
+
+/*baggrundsfarve skifte*/
+body {
+  background-color: #9DAF93; /* Grøn baggrundsfarve */
+  transition: background-color 0.5s ease-in-out; /* Tilføj en overgangseffekt */
+}
+body.fade-in {
+  background-color: #9EBBB7; /* Ændre baggrundsfarven til hvid */
+}
