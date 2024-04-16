@@ -1,0 +1,16 @@
+/*Animationer Start*/
+
+.container-1910, .img-1910, .tekst-1910 {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out; /* Tilføj en overgangseffekt */
+  }
+  .container-1910.fade-in, .img-1910.fade-in, .tekst-1910.fade-in {
+    opacity: 1;
+  }
+  body {
+    background-color: #9DAF93; /* Grøn baggrundsfarve */
+    transition: background-color 0.5s ease-in-out; /* Tilføj en overgangseffekt */
+  }
+  body.fade-in {
+    background-color: #9EBBB7; /* Ændre baggrundsfarven til hvid */
+  }
