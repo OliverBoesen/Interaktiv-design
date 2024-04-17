@@ -96,19 +96,23 @@
 
 <!-- Knap -->
 <div class="sf-knap">
-    <button id="sf-popupBtn"><img src="img/"></button>
-  </div>
-  
-    <!-- Popup vindue -->
-    <div class="sf-popup" id="sf-popup">
-      <div class="sf-popup-content">
-        <span class="sf-close" id="sf-closeBtn">&times;</span>
-        <p>Er dette udsagn sandt eller falsk?</p>
-        <button id="sf-trueBtn">Sandt</button>
-        <button id="sf-falseBtn">Falsk</button>
-        <p id="sf-statement">Dit svar vil blive vist her.</p>
-      </div>
+  <button id="sf-popupBtn"><img src="img/"></button>
+  <button id="lydKnappen">Afspil Lyd</button>
+<audio id="lydAfspiller" src="lyd.mp3" preload="auto"></audio>
+
+</div>
+
+  <!-- Popup vindue -->
+  <div class="sf-popup" id="sf-popup">
+    <div class="sf-popup-content">
+      <span class="sf-close" id="sf-closeBtn">&times;</span>
+      <p>Er dette udsagn sandt eller falsk?</p>
+      <button id="sf-trueBtn">Sandt</button>
+      <button id="sf-falseBtn">Falsk</button>
+      <p id="sf-statement">Dit svar vil blive vist her.</p>
     </div>
+  </div>
+
 
     <!-- Scroll down animation -->
     <div class="lottie-container">
@@ -140,17 +144,28 @@
 
 <!-- Knap -->
 <div class="sf-knap-left">
-    <button id="sf-popupBtn"><img src="img/"></button>
+  <button id="sf-popupBtn"><img src="img/"></button>
+</div>
+
+  <!-- Popup vindue -->
+  <div class="sf-popup" id="sf-popup">
+    <div class="sf-popup-content">
+      <span class="sf-close" id="sf-closeBtn">&times;</span>
+      <p>Er dette udsagn sandt eller falsk?</p>
+      <button id="sf-trueBtn">Sandt</button>
+      <button id="sf-falseBtn">Falsk</button>
+      <p id="sf-statement">Dit svar vil blive vist her.</p>
+    </div>
   </div>
   
     <!-- Popup vindue -->
-    <div class="sf-popup" id="sf-popup">
-      <div class="sf-popup-content">
-        <span class="sf-close" id="sf-closeBtn">&times;</span>
+    <div class="sf-popup" id="sf-popup1">
+      <div class="sf-popup-content1">
+        <span class="sf-close" id="sf-closeBtn1">&times;</span>
         <p>Er dette udsagn sandt eller falsk?</p>
-        <button id="sf-trueBtn">Sandt</button>
-        <button id="sf-falseBtn">Falsk</button>
-        <p id="sf-statement">Dit svar vil blive vist her.</p>
+        <button id="sf-trueBtn1">Sandt</button>
+        <button id="sf-falseBtn1">Falsk</button>
+        <p id="sf-statement1">Dit svar vil blive vist her.</p>
       </div>
     </div>
 
@@ -164,7 +179,7 @@
 <!-- 1910 AFNSIT SLUT-->
 
 <!-- 1920 Afsnit start -->
-<div class="tidslinje-1920">1920</div>
+
 <div class="container-1920" id="1920">  
     <div class="img-1920">
 <img src="img/silluette_1920_animation.gif">
@@ -247,7 +262,7 @@
 
 <div class="container-1940" id="1940">  
     <div class="img-1940">
-<img src="img/silluette_1920_animation.gif">
+<img src="img/silluette_1940_animation.gif">
 </div>
 <div class="tekst-1940">
         <h2>1940</h2>
@@ -292,7 +307,7 @@
     .</p>
 </div>
     <div class="img-1930">
-        <img src="img/silluette_1930_animation.gif">
+        <img src="img/silluette_1950_animation.gif">
     </div>
 </div>
 
@@ -325,7 +340,7 @@
 
 <div class="container-1960" id="1960">  
     <div class="img-1960">
-<img src="img/silluette_1920_animation.gif">
+<img src="img/silluette_1960_animation.gif">
 </div>
 <div class="tekst-1960">
         <h2>1960</h2>
@@ -368,7 +383,7 @@
     </p>
 </div>
     <div class="img-1970">
-        <img src="img/silluette_1930_animation.gif">
+        <img src="img/silluette_1970_animation.gif">
     </div>
 </div>
 
@@ -402,7 +417,7 @@
 
 <div class="container-1980" id="1980">  
     <div class="img-1980">
-<img src="img/silluette_1920_animation.gif">
+<img src="img/silluette_1980_animation.gif">
 </div>
 <div class="tekst-1980">
         <h2>1980</h2>
@@ -447,7 +462,7 @@
     .</p>
 </div>
     <div class="img-1990">
-        <img src="img/silluette_1930_animation.gif">
+        <img src="img/silluette_1990_animation.gif">
     </div>
 </div>
 
@@ -481,7 +496,7 @@
 
 <div class="container-2000" id="2000">  
     <div class="img-2000">
-<img src="img/silluette_1920_animation.gif">
+<img src="img/silluette_2000_animation.gif">
 </div>
 <div class="tekst-2000">
         <h2>2000</h2>
@@ -526,7 +541,7 @@
     .</p>
 </div>
     <div class="img-2010">
-        <img src="img/silluette_1930_animation.gif">
+        <img src="img/silluette_2010_animation.gif">
     </div>
 </div>
 
@@ -559,32 +574,23 @@
 <!-- nu Afsnit start-->
 
 <div class="container-nu" id="nu">  
-    <div class="img-nu">
-<img src="img/silluette_1920_animation.gif">
-</div>
 <div class="tekst-nu">
         <h2>Nu</h2>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit, natus excepturi? Culpa doloremque eligendi facilis, aut qui aliquid laboriosam, in, molestiae nihil neque ducimus accusamus veritatis veniam impedit explicabo molestias.</p>
     </div>
+  </div>
+    <div class="gif-container">
+      <img src="img/silluette_nu_1.png" alt="GIF 1">
+      <img src="img/silluette_nu_2.png" alt="GIF 2">
+      <img src="img/silluette_nu_3.png" alt="GIF 3">
+      <img src="img/silluette_nu_4.png" alt="GIF 4">
+      <img src="img/silluette_nu_5.png" alt="GIF 5">
+    </div>
+
+<div class="tilbage-til-start">
+  <a href="#Start">Tilbage til start</a>
 </div>
 
-
-
-<!-- Knap -->
-<div class="sf-knap">
-    <button id="sf-popupBtn"><img src="img/"></button>
-  </div>
-  
-    <!-- Popup vindue -->
-    <div class="sf-popup" id="sf-popup">
-      <div class="sf-popup-content">
-        <span class="sf-close" id="sf-closeBtn">&times;</span>
-        <p>Er dette udsagn sandt eller falsk?</p>
-        <button id="sf-trueBtn">Sandt</button>
-        <button id="sf-falseBtn">Falsk</button>
-        <p id="sf-statement">Dit svar vil blive vist her.</p>
-      </div>
-    </div>
 
 <!-- nu Afsnit slut-->
 
@@ -608,4 +614,7 @@
 
 <!-- Link til brødkrumme java -->
 <script src="timeline.js"></script>
+
+<!-- Afspil lyd -->
+<script src="lyd.js"></script>
 </html>

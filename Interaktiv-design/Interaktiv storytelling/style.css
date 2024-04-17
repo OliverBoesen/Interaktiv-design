@@ -146,7 +146,6 @@ lottie-player {
     cursor: pointer;
 }
 
-/* 1900 - Start */
 
 /*Sandt eller falsk knap*/
 
@@ -176,7 +175,7 @@ margin-top: -5rem;
   align-items: center;
 }
 
-#sf-trueBtn, #sf-falseBtn, #sf-trueBtn1, #sf-falseBtn1 {
+#sf-trueBtn, #sf-falseBtn {
   border: 1px solid black;
   border-radius: 10px;
   margin: 1rem;
@@ -186,16 +185,16 @@ margin-top: -5rem;
   cursor: pointer;
 }
 
-#sf-trueBtn:hover, #sf-falseBtn:hover, #sf-trueBtn1:hover, #sf-falseBtn1:hover {
+#sf-trueBtn:hover, #sf-falseBtn:hover{
   background-color: rgb(232, 229, 229);
   color: black;
 }
 
- #sf-popup.green, #sf-popup1.green {
+ #sf-popup.green {
   background-color: green; /* Stil for grøn baggrundsfarve */
 }
 
-#sf-popup.red, #sf-popup1.red {
+#sf-popup.red{
   background-color: red; /* Stil for rød baggrundsfarve */
 }
 
@@ -241,18 +240,9 @@ margin-top: -5rem;
 .container-2000, 
 .container-nu {
     display: flex;
-    margin-top: 8rem;
+    margin-top: 25rem;
   }
   
-  .img-1900, 
-  .img-1920,
-  .img-1940,
-  .img-1960,
-  .img-1980,
-  .img-2000,
-  .img-nu {
-    max-width: 30%;
-  }
   
   .tekst-1900,
   .tekst-1920,
@@ -283,7 +273,7 @@ margin-top: -5rem;
   .img-1980 img,
   .img-2000 img,
   .img-nu img {
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
   }
 
@@ -317,7 +307,7 @@ text-align: center;
 .container-1990,
 .container-2010 {
   display: flex;
-  margin-top: 7rem;
+  margin-top: 20rem;
 }
 
 .img-1910 img, 
@@ -385,3 +375,70 @@ body.fade-in {
 
 
 
+.popup-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+}
+
+.popup-content {
+  text-align: center;
+}
+
+.popup-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.popup-btn:hover {
+  background-color: #0056b3;
+}
+
+.true-btn, .false-btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.true-btn:hover, .false-btn:hover {
+  opacity: 0.8;
+}
+
+
+
+.gif-container {
+  display: flex;
+  justify-content: center;
+}
+
+.gif-container img {
+  max-width: 20%;
+  height: auto;
+  margin: 0 5px;
+}
+
+.tilbage-til-start {
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.tilbage-til-start a {
+  text-decoration: none;
+  color: black;
+  border: 1px black solid;
+  padding: .5rem;
+  border-radius: 10px;
+}
