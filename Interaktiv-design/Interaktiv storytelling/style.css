@@ -1,3 +1,4 @@
+/* General styling */
 body {
   background-color: #9DAF93;
   padding: 1rem 18rem;
@@ -42,15 +43,15 @@ lottie-player {
   filter: brightness(0);
 }
 
-/*Overskrift*/
+/* Overskrift */
 .overskrift {
   text-align: center;
   font-size: 14px;
 }
 
-/*Logo*/
+/* Logo */
 .steno-logo img {
-  margin: 0 auto;
+  margin: 2rem auto;
   display: block;
   max-width: 8rem;
 }
@@ -61,7 +62,7 @@ lottie-player {
   font-size: 15px;
 }
 
-/*Tidslinje Start*/
+/* Tidslinje Start */
 .timeline {
   width: 60%;
   height: 2px;
@@ -107,7 +108,6 @@ lottie-player {
   left: 50%;
   transform: translateX(-50%);
   color: black;
-  /* Ændrer farven på årstallet */
 }
 
 .point:nth-child(even)::after {
@@ -118,9 +118,9 @@ lottie-player {
   left: 50%;
   transform: translateX(-50%);
   color: black;
-  /* Ændrer farven på årstallet */
 }
 
+/* Prikkerne på tidslinjen */
 .point:nth-child(7) {
   left: 0%;
 }
@@ -169,16 +169,16 @@ lottie-player {
   left: 52%;
 }
 
-/*Tidslinje Slut*/
+/* Tidslinje Slut */
 
-/*Animeret silloutte*/
+/* Animeret silloutte */
 .kvinde img {
   display: block;
   margin: -3rem auto;
   max-width: 40rem;
 }
 
-/* Udforsk tidslinje knap*/
+/* Udforsk tidslinje knap */
 .udforsk-tidslinje {
   text-align: center;
   border: .5px solid black;
@@ -192,7 +192,7 @@ lottie-player {
   font-weight: bold;
 }
 
-/*Udforsk tidslinje knap hover effekt*/
+/* Udforsk tidslinje knap hover effekt */
 .udforsk-tidslinje:hover {
   color: black;
   background-color: rgb(232, 229, 229);
@@ -200,7 +200,7 @@ lottie-player {
 }
 
 
-/*Sandt eller falsk knap*/
+/* Sandt eller falsk knap */
 
 /* Knap i højre side*/
 .sf-knap {
@@ -251,12 +251,10 @@ lottie-player {
 
 #sf-popup.green {
   background-color: green;
-  /* Stil for grøn baggrundsfarve */
 }
 
 #sf-popup.red {
   background-color: red;
-  /* Stil for rød baggrundsfarve */
 }
 
 .sf-popup-content {
@@ -271,10 +269,11 @@ lottie-player {
 
 .sf-close {
   position: fixed;
-  top: 11rem;
-  right: 28rem;
   font-size: 20px;
+  font-weight: bold;
   cursor: pointer;
+  margin-left: 20rem;
+  margin-top: -1rem;
 }
 
 .sf-knap img,
@@ -301,253 +300,7 @@ lottie-player {
   cursor: pointer;
 }
 
-
-/*Styling til når silluette er til venstre*/
-
-.container-1900,
-.container-1920,
-.container-1940,
-.container-1960,
-.container-1980,
-.container-2000,
-.container-nu {
-  display: flex;
-  margin-top: 18rem;
-}
-
-
-.tekst-1900,
-.tekst-1920,
-.tekst-1940,
-.tekst-1960,
-.tekst-1980,
-.tekst-2000,
-.tekst-nu {
-  margin-left: 20px;
-  width: 200rem;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 1.5;
-}
-
-.tekst-1900 h2,
-.tekst-1920 h2,
-.tekst-1940 h2,
-.tekst-1960 h2,
-.tekst-1980 h2,
-.tekst-2000 h2,
-.tekst-nu h2 {
-  text-align: center;
-}
-
-
-.img-1900 img,
-.img-1920 img,
-.img-1940 img,
-.img-1960 img,
-.img-1980 img,
-.img-2000 img,
-.img-nu img {
-  max-width: 80%;
-  height: auto;
-}
-
-
-
-/*Styling til når silluette er til højre*/
-
-.tekst-1910 h2,
-.tekst-1930 h2,
-.tekst-1950 h2,
-.tekst-1970 h2,
-.tekst-1990 h2,
-.tekst-2010 h2 {
-  text-align: center;
-}
-
-.tekst-1910,
-.tekst-1930,
-.tekst-1950,
-.tekst-1970,
-.tekst-1990,
-.tekst-2010 {
-  margin-right: 20px;
-  width: 200rem;
-  font-size: 20px;
-  font-weight: 500;
-}
-
-.container-1910,
-.container-1930,
-.container-1950,
-.container-1970,
-.container-1990,
-.container-2010 {
-  display: flex;
-  margin-top: 20rem;
-}
-
-.img-1910 img,
-.img-1930 img,
-.img-1950 img,
-.img-1970 img,
-.img-1990 img,
-.img-2010 img {
-  max-width: 80%;
-  height: auto;
-}
-
-
-
-/*fade in*/
-
-.container-1910,
-.img-1910,
-.tekst-1910,
-.container-1930,
-.img-1930,
-.tekst-1930,
-.container-1950,
-.img-1950,
-.tekst-1950,
-.container-1970,
-.img-1970,
-.tekst-1970,
-.container-1990,
-.img-1990,
-.tekst-1990,
-.container-2010,
-.img-2010,
-.tekst-2010 {
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-  /* Tilføj en overgangseffekt */
-}
-
-.container-1910.fade-in,
-.img-1910.fade-in,
-.tekst-1910.fade-in,
-.container-1930.fade-in,
-.img-1930.fade-in,
-.tekst-1930.fade-in,
-.container-1950.fade-in,
-.img-1950.fade-in,
-.tekst-1950.fade-in,
-.container-1970.fade-in,
-.img-1970.fade-in,
-.tekst-1970.fade-in,
-.container-1990.fade-in,
-.img-1990.fade-in,
-.tekst-1990.fade-in,
-.container-2010.fade-in,
-.img-2010.fade-in,
-.tekst-2010.fade-in {
-  opacity: 1;
-}
-
-/* Effekter for 1900-sektionen */
-/* Fade in oppe fra animation */
-.container-1900,
-.img-1900,
-.tekst-1900,
-.container-1920,
-.img-1920,
-.tekst-1920,
-.container-1940,
-.img-1940,
-.tekst-1940,
-.container-1960,
-.img-1960,
-.tekst-1960,
-.container-1980,
-.img-1980,
-.tekst-1980,
-.container-2000,
-.img-2000,
-.tekst-2000,
-.container-nu,
-.img-nu,
-.tekst-nu {
-  opacity: 0;
-  transform: translateY(-40px);
-  /* Flyt elementerne nedad med 100px */
-  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
-  /* Tilføj overgangseffekter */
-}
-
-.container-1900.fade-in,
-.img-1900.fade-in,
-.tekst-1900.fade-in,
-.container-1920.fade-in,
-.img-1920.fade-in,
-.tekst-1920.fade-in,
-.container-1940.fade-in,
-.img-1940.fade-in,
-.tekst-1940.fade-in,
-.container-1960.fade-in,
-.img-1960.fade-in,
-.tekst-1960.fade-in,
-.container-1980.fade-in,
-.img-1980.fade-in,
-.tekst-1980.fade-in,
-.container-2000.fade-in,
-.img-2000.fade-in,
-.tekst-2000.fade-in,
-.container-nu.fade-in,
-.gif-container.fade-in,
-.tekst-nu.fade-in {
-  opacity: 1;
-  transform: translateY(0);
-  /* Flyt elementerne tilbage til deres oprindelige position */
-}
-
-
-
-/*baggrundsfarve skifte*/
-body {
-  background-color: #9DAF93;
-  /* Grøn baggrundsfarve */
-  transition: background-color 0.5s ease-in-out;
-  /* Tilføj en overgangseffekt */
-}
-
-body.fade-in {
-  background-color: #9EBBB7;
-  /* Ændre baggrundsfarven til hvid */
-}
-
-
-
-.breadcrumb-container {
-  position: relative;
-  height: 100%;
-}
-
-.breadcrumb {
-  position: fixed;
-  top: 0;
-  right: 0;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  z-index: 1;
-  pointer-events: none;
-}
-
-.point-year {
-  color: black;
-  font-size: 20px;
-  padding: 10px;
-  transition: font-size 0.3s;
-}
-
-.point-year.active {
-  font-size: 30px;
-  font-weight: bold
-}
-
-
+/* Pop-up boksen */
 
 .popup-container {
   position: fixed;
@@ -594,7 +347,259 @@ body.fade-in {
 }
 
 
+/* Styling til afsnit hvor silluette er til venstre */
 
+.container-1900,
+.container-1920,
+.container-1940,
+.container-1960,
+.container-1980,
+.container-2000,
+.container-nu {
+  display: flex;
+  margin-top: 18rem;
+}
+
+
+.tekst-1900,
+.tekst-1920,
+.tekst-1940,
+.tekst-1960,
+.tekst-1980,
+.tekst-2000 {
+  margin-left: 20px;
+  width: 200rem;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.tekst-nu {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.tekst-1900 h2,
+.tekst-1920 h2,
+.tekst-1940 h2,
+.tekst-1960 h2,
+.tekst-1980 h2,
+.tekst-2000 h2,
+.tekst-nu h2 {
+  text-align: center;
+}
+
+
+.img-1900 img,
+.img-1920 img,
+.img-1940 img,
+.img-1960 img,
+.img-1980 img,
+.img-2000 img,
+.img-nu img {
+  max-width: 80%;
+  height: auto;
+}
+
+
+
+/* Styling til afsnit hvor silluette er til højre */
+
+.tekst-1910 h2,
+.tekst-1930 h2,
+.tekst-1950 h2,
+.tekst-1970 h2,
+.tekst-1990 h2,
+.tekst-2010 h2 {
+  text-align: center;
+}
+
+.tekst-1910,
+.tekst-1930,
+.tekst-1950,
+.tekst-1970,
+.tekst-1990,
+.tekst-2010 {
+  margin-right: 20px;
+  width: 200rem;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.container-1910,
+.container-1930,
+.container-1950,
+.container-1970,
+.container-1990,
+.container-2010 {
+  display: flex;
+  margin-top: 20rem;
+}
+
+.img-1910 img,
+.img-1930 img,
+.img-1950 img,
+.img-1970 img,
+.img-1990 img,
+.img-2010 img {
+  max-width: 80%;
+  height: auto;
+}
+
+#info-png {
+  max-width: 50%;
+  display: block;
+  margin: 4rem auto;
+}
+
+/* fade in effekt når man scroller*/
+
+.container-1910,
+.img-1910,
+.tekst-1910,
+.container-1930,
+.img-1930,
+.tekst-1930,
+.container-1950,
+.img-1950,
+.tekst-1950,
+.container-1970,
+.img-1970,
+.tekst-1970,
+.container-1990,
+.img-1990,
+.tekst-1990,
+.container-2010,
+.img-2010,
+.tekst-2010 {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  /* Tilføj en overgangseffekt */
+}
+
+.container-1910.fade-in,
+.img-1910.fade-in,
+.tekst-1910.fade-in,
+.container-1930.fade-in,
+.img-1930.fade-in,
+.tekst-1930.fade-in,
+.container-1950.fade-in,
+.img-1950.fade-in,
+.tekst-1950.fade-in,
+.container-1970.fade-in,
+.img-1970.fade-in,
+.tekst-1970.fade-in,
+.container-1990.fade-in,
+.img-1990.fade-in,
+.tekst-1990.fade-in,
+.container-2010.fade-in,
+.img-2010.fade-in,
+.tekst-2010.fade-in {
+  opacity: 1;
+}
+
+
+/* Fade in oppe fra animation */
+.container-1900,
+.img-1900,
+.tekst-1900,
+.container-1920,
+.img-1920,
+.tekst-1920,
+.container-1940,
+.img-1940,
+.tekst-1940,
+.container-1960,
+.img-1960,
+.tekst-1960,
+.container-1980,
+.img-1980,
+.tekst-1980,
+.container-2000,
+.img-2000,
+.tekst-2000,
+.container-nu,
+.img-nu,
+.tekst-nu {
+  opacity: 0;
+  transform: translateY(-40px);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  /* Tilføj overgangseffekter */
+}
+
+.container-1900.fade-in,
+.img-1900.fade-in,
+.tekst-1900.fade-in,
+.container-1920.fade-in,
+.img-1920.fade-in,
+.tekst-1920.fade-in,
+.container-1940.fade-in,
+.img-1940.fade-in,
+.tekst-1940.fade-in,
+.container-1960.fade-in,
+.img-1960.fade-in,
+.tekst-1960.fade-in,
+.container-1980.fade-in,
+.img-1980.fade-in,
+.tekst-1980.fade-in,
+.container-2000.fade-in,
+.img-2000.fade-in,
+.tekst-2000.fade-in,
+.container-nu.fade-in,
+.gif-container.fade-in,
+.tekst-nu.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+  /* Flyt elementerne tilbage til deres oprindelige position */
+}
+
+
+
+/* baggrundsfarve skifte */
+body {
+  background-color: #9DAF93;
+  /* Grøn baggrundsfarve */
+  transition: background-color 0.5s ease-in-out;
+  /* Tilføj en overgangseffekt */
+}
+
+body.fade-in {
+  background-color: #9EBBB7;
+  /* Ændre baggrundsfarven til blå */
+}
+
+
+/* Breadcrumb / tidslinje til højre på skærmen */
+.breadcrumb-container {
+  position: relative;
+  height: 100%;
+}
+
+.breadcrumb {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.point-year {
+  color: black;
+  font-size: 20px;
+  padding: 10px;
+  transition: font-size 0.3s;
+}
+
+.point-year.active {
+  font-size: 30px;
+  font-weight: bold
+}
+
+/* 5 silluetor i "nu" afsnittet */
 .gif-container {
   display: flex;
   justify-content: center;
@@ -605,6 +610,8 @@ body.fade-in {
   height: auto;
   margin: 0 5px;
 }
+
+/* Tilbage til start knap */
 
 .tilbage-til-start {
   text-align: center;
