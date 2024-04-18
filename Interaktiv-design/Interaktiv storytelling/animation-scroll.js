@@ -220,3 +220,11 @@ lottiePlayer12.addEventListener('click', () => {
     behavior: 'smooth'
   });
 });
+
+
+// Scroller tilbage til start
+
+document.getElementById("tilbageKnap").addEventListener("click", function() {
+  var startElement = document.getElementById("Start");
+  startElement.scrollIntoView({ behavior: "smooth" });
+});
