@@ -1,0 +1,698 @@
+/* General styling */
+body {
+  background-color: #9DAF93;
+  padding: 1rem 18rem;
+}
+
+h1, h2 {
+  font-family: "Alatsi", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+p {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+/* Scroll ned animation */
+/*Der er lavet 12 af dem så JavaScript kan gå ned og tage fat i den rigtige div, til at scrool ned */
+
+.lottie-container-2,
+.lottie-container-4,
+.lottie-container-6,
+.lottie-container-8,
+.lottie-container-10,
+.lottie-container-12 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem auto 0;
+  cursor: pointer;
+  width: 10%;
+}
+
+.lottie-container,
+.lottie-container-3,
+.lottie-container-5,
+.lottie-container-7,
+.lottie-container-9,
+.lottie-container-11,
+.lottie-container-13 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem auto 0;
+  cursor: pointer;
+  width: 10%;
+}
+
+
+lottie-player {
+  width: 85px;
+  height: 75px;
+  filter: brightness(0);
+}
+
+/* Overskrift */
+.overskrift {
+  text-align: center;
+  font-size: 12px;
+}
+
+/* Logo */
+.steno-logo img {
+  margin: 0rem auto;
+  display: block;
+  max-width: 8rem;
+}
+
+/* Velkomst ord */
+.forord {
+  text-align: center;
+  font-size: 13px;
+}
+
+/* Tidslinje Start */
+.timeline {
+  width: 60%;
+  height: 2px;
+  /* Tykkelsen af tidslinjen */
+  background-color: black;
+  /* Farven på tidslinjen */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5rem auto;
+  /* Centrerer tidslinjen vandret */
+  position: relative;
+  /* Til placering af punkter */
+}
+
+.line {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.point {
+  width: 15px;
+  /* Diameteren på punkterne */
+  height: 15px;
+  background-color: white;
+  border-radius: 100%;
+  /* Gør punkterne runde */
+  position: absolute;
+  top: -1;
+}
+
+.point:nth-child(odd)::after {
+  content: attr(data-year);
+  font-size: 20px;
+  position: absolute;
+  top: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: black;
+}
+
+.point:nth-child(even)::after {
+  content: attr(data-year);
+  font-size: 20px;
+  position: absolute;
+  top: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: black;
+}
+
+/* Prikkerne på tidslinjen */
+.point:nth-child(7) {
+  left: 0%;
+}
+
+.point:nth-child(2) {
+  left: 7.6%;
+}
+
+.point:nth-child(3) {
+  left: 16%;
+}
+
+.point:nth-child(4) {
+  left: 24%;
+}
+
+.point:nth-child(5) {
+  left: 33%;
+}
+
+.point:nth-child(6) {
+  left: 42%;
+}
+
+.point:nth-child(8) {
+  left: 61%;
+}
+
+.point:nth-child(9) {
+  left: 72%;
+}
+
+.point:nth-child(10) {
+  left: 82%;
+}
+
+.point:nth-child(11) {
+  left: 92%;
+}
+
+.point:nth-child(12) {
+  left: 100%;
+}
+
+.point:nth-child(13) {
+  left: 52%;
+}
+
+/* Tidslinje Slut */
+
+/* Animeret silloutte */
+.kvinde img {
+  display: block;
+  margin: -6.5rem auto;
+  max-width: 40rem;
+}
+
+/* Udforsk tidslinje knap */
+.udforsk-tidslinje {
+  text-align: center;
+  border: .5px solid black;
+  border-radius: 10px;
+  margin: 9rem auto;
+  display: block;
+  color: black;
+  background-color: white;
+  padding: 7px;
+  width: 10rem;
+  font-weight: bold;
+}
+
+/* Udforsk tidslinje knap hover effekt */
+.udforsk-tidslinje:hover {
+  color: black;
+  background-color: rgb(232, 229, 229);
+  cursor: pointer;
+}
+
+
+/* Sandt eller falsk knap */
+
+/* Knap i højre side*/
+.sf-knap {
+  display: flex;
+  justify-content: flex-end;
+  z-index: -1000;
+}
+
+.sf-knap button {
+  font-size: 16px;
+  max-width: 10%;
+  background: none;
+  border: none;
+  padding: none;
+  cursor: pointer;
+}
+
+.sf-popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+#sf-trueBtn-1900,
+#sf-falseBtn-1900,
+#sf-trueBtn-1910,
+#sf-falseBtn-1910,
+#sf-trueBtn-1920,
+#sf-falseBtn-1920,
+#sf-trueBtn-1930,
+#sf-falseBtn-1930,
+#sf-trueBtn-1940,
+#sf-falseBtn-1940,
+#sf-trueBtn-1950,
+#sf-falseBtn-1950,
+#sf-trueBtn-1960,
+#sf-falseBtn-1960,
+#sf-trueBtn-1970,
+#sf-falseBtn-1970,
+#sf-trueBtn-1980,
+#sf-falseBtn-1980,
+#sf-trueBtn-1990,
+#sf-falseBtn-1990,
+#sf-trueBtn-2000,
+#sf-falseBtn-2000,
+#sf-trueBtn-2010,
+#sf-falseBtn-2010,
+#sf-trueBtn-nu,
+#sf-falseBtn-nu
+ {
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 1rem;
+  background-color: white;
+  color: black;
+  padding: .5rem;
+  cursor: pointer;
+}
+
+#sf-trueBtn:hover,
+#sf-falseBtn:hover {
+  background-color: rgb(232, 229, 229);
+  color: black;
+}
+
+#sf-popup.green {
+  background-color: green;
+}
+
+#sf-popup.red {
+  background-color: red;
+}
+
+.sf-popup-content-1900,
+.sf-popup-content-1910,
+.sf-popup-content-1920,
+.sf-popup-content-1930,
+.sf-popup-content-1940,
+.sf-popup-content-1950,
+.sf-popup-content-1960,
+.sf-popup-content-1970,
+.sf-popup-content-1980,
+.sf-popup-content-1990,
+.sf-popup-content-2000,
+.sf-popup-content-2010,
+.sf-popup-content-nu {
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  max-width: 40rem;
+  display: block;
+  margin: 10rem auto 0 auto;
+  background-color: #9DAF93;
+}
+
+.sf-close {
+  position: fixed;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 20rem;
+  margin-top: -1rem;
+}
+
+.sf-knap img,
+.sf-knap-left img {
+  max-width: 100%;
+}
+
+
+/* Knap i venstre side */
+
+.sf-knap-left {
+  display: flex;
+  justify-content: flex-start;
+  z-index: -1000;
+ 
+}
+
+.sf-knap-left button {
+  font-size: 16px;
+  max-width: 10%;
+  background: none;
+  border: none;
+  padding: none;
+  cursor: pointer;
+}
+
+/* Pop-up boksen */
+
+.popup-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+}
+
+.popup-content {
+  text-align: center;
+}
+
+.popup-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.popup-btn:hover {
+  background-color: #0056b3;
+}
+
+.true-btn,
+.false-btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.true-btn:hover,
+.false-btn:hover {
+  opacity: 0.8;
+}
+
+
+/* Styling til afsnit hvor silluette er til venstre */
+
+.container-1900,
+.container-1920,
+.container-1940,
+.container-1960,
+.container-1980,
+.container-2000,
+.container-nu {
+  display: flex;
+  margin-top: 18rem;
+}
+
+
+.tekst-1900,
+.tekst-1920,
+.tekst-1940,
+.tekst-1960,
+.tekst-1980,
+.tekst-2000 {
+  margin-left: 20px;
+  width: 200rem;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.tekst-nu p {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.tekst-1900 h2,
+.tekst-1920 h2,
+.tekst-1940 h2,
+.tekst-1960 h2,
+.tekst-1980 h2,
+.tekst-2000 h2 {
+  text-align: center;
+  font-size: 15px;
+}
+
+.tekst-nu h2 {
+  font-size: 25px;
+  text-align: center;
+}
+
+.img-1900 img,
+.img-1920 img,
+.img-1940 img,
+.img-1960 img,
+.img-1980 img,
+.img-2000 img,
+.img-nu img {
+  max-width: 80%;
+  height: auto;
+}
+
+
+
+/* Styling til afsnit hvor silluette er til højre */
+
+.tekst-1910 h2,
+.tekst-1930 h2,
+.tekst-1950 h2,
+.tekst-1970 h2,
+.tekst-1990 h2,
+.tekst-2010 h2 {
+  text-align: center;
+}
+
+.tekst-1910,
+.tekst-1930,
+.tekst-1950,
+.tekst-1970,
+.tekst-1990,
+.tekst-2010 {
+  margin-right: 20px;
+  width: 200rem;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.container-1910,
+.container-1930,
+.container-1950,
+.container-1970,
+.container-1990,
+.container-2010 {
+  display: flex;
+  margin-top: 20rem;
+}
+
+.img-1910 img,
+.img-1930 img,
+.img-1950 img,
+.img-1970 img,
+.img-1990 img,
+.img-2010 img {
+  max-width: 80%;
+  height: auto;
+}
+
+#info-png {
+  max-width: 30%;
+  display: block;
+  margin: 0rem auto;
+}
+
+/* fade in effekt når man scroller*/
+
+.container-1910,
+.img-1910,
+.tekst-1910,
+.container-1930,
+.img-1930,
+.tekst-1930,
+.container-1950,
+.img-1950,
+.tekst-1950,
+.container-1970,
+.img-1970,
+.tekst-1970,
+.container-1990,
+.img-1990,
+.tekst-1990,
+.container-2010,
+.img-2010,
+.tekst-2010 {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  /* Tilføj en overgangseffekt */
+}
+
+.container-1910.fade-in,
+.img-1910.fade-in,
+.tekst-1910.fade-in,
+.container-1930.fade-in,
+.img-1930.fade-in,
+.tekst-1930.fade-in,
+.container-1950.fade-in,
+.img-1950.fade-in,
+.tekst-1950.fade-in,
+.container-1970.fade-in,
+.img-1970.fade-in,
+.tekst-1970.fade-in,
+.container-1990.fade-in,
+.img-1990.fade-in,
+.tekst-1990.fade-in,
+.container-2010.fade-in,
+.img-2010.fade-in,
+.tekst-2010.fade-in {
+  opacity: 1;
+}
+
+
+/* Fade in oppe fra animation */
+.container-1900,
+.img-1900,
+.tekst-1900,
+.container-1920,
+.img-1920,
+.tekst-1920,
+.container-1940,
+.img-1940,
+.tekst-1940,
+.container-1960,
+.img-1960,
+.tekst-1960,
+.container-1980,
+.img-1980,
+.tekst-1980,
+.container-2000,
+.img-2000,
+.tekst-2000,
+.container-nu,
+.img-nu,
+.tekst-nu {
+  opacity: 0;
+  transform: translateY(-40px);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  /* Tilføj overgangseffekter */
+}
+
+.container-1900.fade-in,
+.img-1900.fade-in,
+.tekst-1900.fade-in,
+.container-1920.fade-in,
+.img-1920.fade-in,
+.tekst-1920.fade-in,
+.container-1940.fade-in,
+.img-1940.fade-in,
+.tekst-1940.fade-in,
+.container-1960.fade-in,
+.img-1960.fade-in,
+.tekst-1960.fade-in,
+.container-1980.fade-in,
+.img-1980.fade-in,
+.tekst-1980.fade-in,
+.container-2000.fade-in,
+.img-2000.fade-in,
+.tekst-2000.fade-in,
+.container-nu.fade-in,
+.gif-container.fade-in,
+.tekst-nu.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+  /* Flyt elementerne tilbage til deres oprindelige position */
+}
+
+
+
+/* baggrundsfarve skifte */
+body {
+  background-color: #9DAF93;
+  /* Grøn baggrundsfarve */
+  transition: background-color 0.5s ease-in-out;
+  /* Tilføj en overgangseffekt */
+}
+
+body.fade-in {
+  background-color: #9EBBB7;
+  /* Ændre baggrundsfarven til blå */
+}
+
+
+/* Breadcrumb / tidslinje til højre på skærmen */
+.breadcrumb-container {
+  position: relative;
+  height: 100%;
+}
+
+.breadcrumb {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.point-year {
+  color: black;
+  font-size: 20px;
+  padding: 10px;
+  transition: font-size 0.3s;
+}
+
+.point-year.active {
+  font-size: 30px;
+  font-weight: bold
+}
+
+/* 5 silluetor i "nu" afsnittet */
+.gif-container {
+  display: flex;
+  justify-content: center;
+}
+
+.gif-container img {
+  max-width: 20%;
+  height: auto;
+  margin: 0 5px;
+}
+
+/* Tilbage til start knap */
+
+.tilbage-til-start {
+  text-align: center;
+  margin-top: 5rem;
+
+}
+
+.tilbage-til-start a {
+  text-align: center;
+  border: .5px solid black;
+  border-radius: 10px;
+  margin: 3rem auto;
+  display: block;
+  color: black;
+  background-color: white;
+  padding: 7px;
+  width: 10rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.tilbage-til-start button {
+  text-align: center;
+  border: .5px solid black;
+  border-radius: 10px;
+  margin: 3rem auto;
+  display: block;
+  color: black;
+  background-color: white;
+  padding: 7px;
+  width: 10rem;
+  font-weight: bold;
+}
